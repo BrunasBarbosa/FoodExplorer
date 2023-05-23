@@ -4,7 +4,7 @@ export function Button({ title, loading = false, ...rest }) {
   return (
     <Container
       type='button'
-      disable={loading}
+      disable={loading ? 'Carregando...' : title}
       {...rest}
     >
       {loading ? 'Carregando...' : title}
@@ -14,5 +14,5 @@ export function Button({ title, loading = false, ...rest }) {
 
 Button.propTypes = {
   title: PropTypes.string,
-  loading: PropTypes.string
+  loading: PropTypes.bool
 }
