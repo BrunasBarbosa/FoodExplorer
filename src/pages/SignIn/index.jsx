@@ -1,4 +1,5 @@
 import { Button } from '../../components/Button';
+import { ButtonText } from '../../components/ButtonText';
 import { Input } from '../../components/Input';
 import { Logo } from '../../components/Logo';
 import { Container, Form } from "./styles";
@@ -24,6 +25,9 @@ export function SignIn() {
           title='Entrar'
         />
 
+        <ButtonText 
+          title='Criar uma conta'
+        />
       </Form>
     </Container>
   );
