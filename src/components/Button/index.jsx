@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import PropTypes from 'prop-types';
+
 export function Button({ title, loading = false, ...rest }) {
   return (
     <Container
@@ -10,9 +10,4 @@ export function Button({ title, loading = false, ...rest }) {
       {loading ? 'Carregando...' : title}
     </Container>
   );
-}
-
-Button.propTypes = {
-  title: PropTypes.string,
-  loading: PropTypes.bool
 }

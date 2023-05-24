@@ -1,5 +1,4 @@
 import { Container } from './styles';
-import PropTypes from 'prop-types';
 
 export function Input({ title, ...rest }) {
   return (
@@ -10,6 +9,3 @@ export function Input({ title, ...rest }) {
   )
 }
 
-Input.propTypes = {
-  title: PropTypes.string,
-}

@@ -7,7 +7,7 @@ export const Container = styled.div`
   gap: .8rem;
 
   color: ${({ theme }) => theme.COLORS.GRAY_400};
-
+  
   label {
     font-size: 1.6rem;
   }
@@ -16,9 +16,11 @@ export const Container = styled.div`
     width: 100%;
     padding: 1.6rem 1.4rem;
     background-color: ${({ theme }) => theme.COLORS.DARK_900};
-
+    
     border: none;
     border-radius: .8rem;
+    
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
     &:placeholder {
       color: ${({ theme }) => theme.COLORS.GRAY_500};
