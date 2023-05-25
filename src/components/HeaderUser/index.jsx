@@ -1,4 +1,4 @@
-import Menu from '../../assets/Menu.svg';
+import Menu from '../../assets/icons/Menu.svg';
 import { Container } from './styles';
 import { Receipt } from '../Receipt';
 import { Logo } from '../Logo';

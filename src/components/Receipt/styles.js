@@ -4,7 +4,8 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const Conter = styled.div`
+export const Counter = styled.div`
+  text-align: center;
   height: 80%;
   width: 70%;
   border-radius: 50%;
@@ -14,8 +15,7 @@ export const Conter = styled.div`
   right: -.8rem;
   top: -.8rem;
 
-  p {
-    text-align: center;
+  span {
     font-size: 1.4rem;
   }
 `;

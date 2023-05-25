@@ -25,8 +25,13 @@ export default createGlobalStyle`
 
   body,
   input {
-    font-family: var(--font-main);
     font-size: 1.6rem;
+  }
+
+  body,
+  input,
+  button {
+    font-family: var(--font-main);
   }
 
   a {
