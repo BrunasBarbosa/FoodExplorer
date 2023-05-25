@@ -9,6 +9,8 @@ export const Container = styled.div`
   align-items: center;
   gap: 1.2rem;
 
+  position: relative;
+
   background-color: ${({ theme }) => theme.COLORS.DARK_200};
   border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
   border-radius: .8rem;
@@ -20,6 +22,12 @@ export const Container = styled.div`
   svg {
     height: 2.6rem;
     width: 2.6rem;
+  }
+
+  > svg {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
   }
 
   img {
