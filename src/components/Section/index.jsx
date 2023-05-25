@@ -1,3 +1,5 @@
+import ravanelloImg from '../../assets/dishes/ravanello.svg';
+import gambeImg from '../../assets/dishes/gambe.svg';
 import { Container } from './styles';
 import { Card } from '../Card';
 
@@ -8,15 +10,17 @@ export function Section({ title, data }) {
       <h3>{title}</h3>
 
       <div>
-        <Card
-          data={['Salada Ravanello', '49,97']}
-        />
-        <Card
-          data={['Salada Ravanello', '49,97']}
-        />
-        <Card
-          data={['Salada Ravanello', '49,97']}
-        />
+        {
+          data.length > 0 ?
+            data.map((dishe, index) => (
+              <Card
+                key={String(index)}
+                data={dishe}
+              />
+            ))
+            :
+            <Card />
+        }
       </div>
 
 

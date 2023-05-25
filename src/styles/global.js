@@ -13,7 +13,7 @@ export default createGlobalStyle`
     --font-main: 'Poppins', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
 
-    --background-color: ${({ theme }) => theme.COLORS.DARK_100};
+    --background-color: ${({ theme }) => theme.COLORS.DARK_500};
     --font-color: ${({ theme }) => theme.COLORS.LIGHT_100}
   }
 
