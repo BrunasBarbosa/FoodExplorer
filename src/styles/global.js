@@ -10,8 +10,8 @@ export default createGlobalStyle`
   }
 
   :root {
-    --font-main: 'Roboto', sans-serif;
-    --font-secondary: 'Poppins', sans-serif;
+    --font-main: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
 
     --background-color: ${({ theme }) => theme.COLORS.DARK_100};
     --font-color: ${({ theme }) => theme.COLORS.LIGHT_100}

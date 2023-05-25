@@ -15,7 +15,6 @@ export const Conter = styled.div`
   top: -.8rem;
 
   p {
-    font-family: var(--font-secondary);
     text-align: center;
     font-size: 1.4rem;
   }

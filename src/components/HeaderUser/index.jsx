@@ -1,12 +1,13 @@
 import Menu from '../../assets/Menu.svg';
-import { Receipt } from '../Receipt';
 import { Container } from './styles';
+import { Receipt } from '../Receipt';
+import { Logo } from '../Logo';
 
-export function HeaderUser({ children }) {
+export function HeaderUser() {
   return (
     <Container>
       <img src={Menu} alt='Icone de barra de menu' />
-      {children}
+      <Logo />
       <Receipt />
     </Container>
   );
