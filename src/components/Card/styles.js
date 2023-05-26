@@ -25,6 +25,8 @@ export const Container = styled.div`
   }
 
   > svg {
+    height: 3.2rem;
+    width: 3.2rem;
     position: absolute;
     top: 1.6rem;
     right: 1.6rem;
@@ -41,15 +43,5 @@ export const Container = styled.div`
 
   > span {
     color: ${({ theme }) => theme.COLORS.AQUA};
-  }
-
-  div {
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
-  }
-
-  button {
-    padding: .4rem 5.9rem;
   }
 `;

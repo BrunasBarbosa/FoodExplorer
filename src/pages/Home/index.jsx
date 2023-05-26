@@ -2,8 +2,11 @@ import { DishesRepositoryInMemory, MainDishesRepositoryInMemory, MainDishesRepos
 
 import { HeaderUser } from '../../components/HeaderUser';
 import { Section } from '../../components/Section';
+import { Counter } from '../../components/Counter';
 import { Slogan } from '../../components/Slogan';
 import { Footer } from '../../components/Footer';
+
+import { VscHeart } from 'react-icons/vsc';
 
 import { Container } from './styles';
 
@@ -14,11 +17,12 @@ export function Home() {
       <HeaderUser />
       <Slogan />
 
-      <Section title='Refeições' data={DishesRepositoryInMemory} />
-      <Section title='Pratos principais' data={MainDishesRepositoryInMemory} />
-      <Section title='Pratos principais' data={MainDishesRepositoryInMemoryTwo} />
+      <Section title='Refeições' data={DishesRepositoryInMemory} icon={VscHeart} children={<Counter />} />
+      <Section title='Pratos principais' data={MainDishesRepositoryInMemory} icon={VscHeart} children={<Counter />} />
+      <Section title='Pratos principais' data={MainDishesRepositoryInMemoryTwo} icon={VscHeart} children={<Counter />} />
 
       <Footer />
     </Container>
   );
 }
+

@@ -1,9 +1,7 @@
-import ravanelloImg from '../../assets/dishes/ravanello.svg';
-import gambeImg from '../../assets/dishes/gambe.svg';
 import { Container } from './styles';
 import { Card } from '../Card';
 
-export function Section({ title, data }) {
+export function Section({ title, data, icon: Icon, children }) {
 
   return (
     <Container>
@@ -16,6 +14,8 @@ export function Section({ title, data }) {
               <Card
                 key={String(index)}
                 data={dishe}
+                icon={Icon}
+                children={children}
               />
             ))
             :
