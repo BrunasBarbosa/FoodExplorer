@@ -1,4 +1,4 @@
-import { RiArrowLeftSLine } from 'react-icons/ri';
+import { SlArrowLeft } from 'react-icons/sl';
 import { useNavigate } from 'react-router-dom';
 
 import { Container } from './styles';
@@ -12,7 +12,7 @@ export function Return() {
 
   return (
     <Container onClick={handleBack}>
-      <RiArrowLeftSLine />
+      <SlArrowLeft />
       voltar
     </Container>
   );

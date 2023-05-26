@@ -3,7 +3,7 @@ import { Button } from '../Button';
 import { Container } from './styles';
 import { useState } from 'react';
 
-export function Counter() {
+export function Counter({ title, ...rest }) {
   const [amount, setAmount] = useState(1);
 
   function handlePlusAmount() {
@@ -21,16 +21,14 @@ export function Counter() {
   }
 
   return (
-    <Container>
+    <Container className='counter' {...rest}>
       <div>
         <RxMinus onClick={handleMinusAmount} />
         <span>0{amount}</span>
         <RxPlus onClick={handlePlusAmount} />
       </div>
 
-      <Button title='incluir' />
+      <Button title={title} />
     </Container>
-
-
   );
 }

@@ -7,6 +7,7 @@ export const Container = styled.div`
   gap: 1.6rem;
   
   div {
+    font-family: var(--font-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +15,7 @@ export const Container = styled.div`
   }
 
   button {
+    position: relative;
     padding: .4rem 5.9rem;
   }
 `;

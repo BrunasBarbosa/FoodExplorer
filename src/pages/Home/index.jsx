@@ -17,9 +17,9 @@ export function Home() {
       <HeaderUser />
       <Slogan />
 
-      <Section title='Refeições' data={DishesRepositoryInMemory} icon={VscHeart} children={<Counter />} />
-      <Section title='Pratos principais' data={MainDishesRepositoryInMemory} icon={VscHeart} children={<Counter />} />
-      <Section title='Pratos principais' data={MainDishesRepositoryInMemoryTwo} icon={VscHeart} children={<Counter />} />
+      <Section title='Refeições' data={DishesRepositoryInMemory} icon={VscHeart} children={<Counter title={'incluir'}/>} />
+      <Section title='Pratos principais' data={MainDishesRepositoryInMemory} icon={VscHeart} children={<Counter title={'incluir'}/>} />
+      <Section title='Pratos principais' data={MainDishesRepositoryInMemoryTwo} icon={VscHeart} children={<Counter title={'incluir'}/>} />
 
       <Footer />
     </Container>
