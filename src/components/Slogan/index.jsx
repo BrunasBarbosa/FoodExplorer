@@ -4,7 +4,7 @@ import { Container } from './styles';
 export function Slogan() {
   return (
     <Container >
-      <img src={ Macarons } alt='Imagem de macarons e frutas vermelhas'/>
+      <img src={Macarons} alt='Imagem de macarons e frutas vermelhas' />
       <div>
         <h2>Sabores inigualáveis</h2>
         <p>
