@@ -17,7 +17,7 @@ export const Container = styled.header`
     justify-content: center;
 
     p {
-      font-size: 2rem;
+      font-size: 2.1rem;
       line-height: 2.4rem;
     }
     

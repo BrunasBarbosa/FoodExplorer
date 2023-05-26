@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  margin-bottom: 6rem;
+  margin-bottom: 3.8rem;
   height: 16.4rem;
   display: flex;
   position: relative;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: end;
 
-    margin: 3.8rem 1.6rem 0 3.6rem;
+    margin: 4.4rem 1.6rem 0 3.6rem;
     width: 100%;
     height: 12rem;
     background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
