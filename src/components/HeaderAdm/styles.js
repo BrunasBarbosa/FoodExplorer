@@ -10,11 +10,18 @@ export const Container = styled.header`
   width: 100%;
   height: 11.4rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
+`;
+
+export const Content = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
 
   div {
+    justify-content: right;
     display: flex;
     gap: .8rem;
-    justify-content: center;
 
     p {
       font-size: 2.1rem;
@@ -24,5 +31,13 @@ export const Container = styled.header`
     img {
       height: 2.4rem;
     }
+  }
+
+  span {
+    width: 50%;
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+
+    color: ${({ theme }) => theme.COLORS.AQUA};
   }
 `;

@@ -1,6 +1,6 @@
 import { DishesRepositoryInMemory, MainDishesRepositoryInMemory, MainDishesRepositoryInMemoryTwo } from '../../repositories/DishesRepositoryInMemory';
 
-import { HeaderUser } from '../../components/HeaderUser';
+import { HeaderAdm } from '../../components/HeaderAdm';
 import { Section } from '../../components/Section';
 import { Slogan } from '../../components/Slogan';
 import { Footer } from '../../components/Footer';
@@ -13,7 +13,7 @@ export function HomeAdm() {
 
   return (
     <Container>
-      <HeaderUser />
+      <HeaderAdm />
       <Slogan />
 
       <Section
