@@ -2,36 +2,42 @@ import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
 import { Input } from '../../components/Input';
 import { Logo } from '../../components/Logo';
-import { Container, Form } from "./styles";
+import { Container, Form, Field } from "./styles";
 
 export function SignUp() {
   return (
     <Container >
       <Logo />
       <Form>
-        <Input
-          title='Seu nome'
-          placeholder='Exemplo: Maria da Silva'
-          type='text'
-        />
+        <Field>
+          <label>Seu nome</label>
+          <Input
+            placeholder='Exemplo: Maria da Silva'
+            type='text'
+          />
+        </Field>
 
-        <Input
-          title='Email'
-          placeholder='Exemplo: exemplo@exemplo.com.br'
-          type='email'
-        />
+        <Field>
+          <label>Email</label>
+          <Input
+            placeholder='Exemplo: exemplo@exemplo.com.br'
+            type='email'
+          />
+        </Field>
 
-        <Input
-          title='Senha'
-          placeholder='No mínimo 6 caracteres'
-          type='password'
-        />
+        <Field>
+          <label>Senha</label>
+          <Input
+            placeholder='No mínimo 6 caracteres'
+            type='password'
+          />
+        </Field>
 
         <Button
           title='Criar conta'
         />
 
-        <ButtonText 
+        <ButtonText
           title='Já tenho uma conta'
         />
       </Form>

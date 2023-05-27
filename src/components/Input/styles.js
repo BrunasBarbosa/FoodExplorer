@@ -8,11 +8,7 @@ export const Container = styled.div`
 
   color: ${({ theme }) => theme.COLORS.GRAY_400};
   background-color: ${({ theme }) => theme.COLORS.DARK_900};
-  
-  label {
-    font-size: 1.6rem;
-  }
-  
+
   > input {
     width: 100%;
     height: 4.8rem;
