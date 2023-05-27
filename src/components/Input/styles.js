@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: .8rem;
+  align-items: center;
+  border-radius: .8rem;
 
   color: ${({ theme }) => theme.COLORS.GRAY_400};
+  background-color: ${({ theme }) => theme.COLORS.DARK_900};
   
   label {
     font-size: 1.6rem;
@@ -14,9 +15,9 @@ export const Container = styled.div`
   
   > input {
     width: 100%;
+    height: 4.8rem;
     padding: 1.6rem 1.4rem;
-    background-color: ${({ theme }) => theme.COLORS.DARK_900};
-    
+    background: transparent;
     border: none;
     border-radius: .8rem;
     
@@ -25,5 +26,9 @@ export const Container = styled.div`
     &:placeholder {
       color: ${({ theme }) => theme.COLORS.GRAY_500};
     }
+  }
+
+  > svg {
+    margin-left: 1.6rem;
   }
 `;
