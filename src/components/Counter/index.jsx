@@ -1,9 +1,11 @@
+
 import { RxMinus, RxPlus } from 'react-icons/rx';
+import { ButtonDetails } from '../ButtonDetails';
 import { Button } from '../Button';
 import { Container } from './styles';
 import { useState } from 'react';
 
-export function Counter({ title, ...rest }) {
+export function Counter({ title, data, ...rest }) {
   const [amount, setAmount] = useState(1);
 
   function handlePlusAmount() {
@@ -28,7 +30,12 @@ export function Counter({ title, ...rest }) {
         <RxPlus onClick={handlePlusAmount} />
       </div>
 
-      <Button title={title} />
+      {
+        data ? <ButtonDetails title={`pedir ∙ R$  ${data}`} />
+          :
+          <Button title={title} />
+      }
+
     </Container>
   );
 }

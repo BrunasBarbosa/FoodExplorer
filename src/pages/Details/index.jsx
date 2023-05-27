@@ -1,5 +1,4 @@
 import { DishesRepositoryInMemory, MainDishesRepositoryInMemory, MainDishesRepositoryInMemoryTwo } from '../../repositories/DishesRepositoryInMemory';
-import ReceiptImg from '../../assets/icons/Receipt.svg';
 
 import { HeaderUser } from '../../components/HeaderUser';
 import { DataDish } from '../../components/DataDish';
@@ -32,7 +31,7 @@ export function Details() {
         tags: data.tags
       }} />
 
-      <Counter  title={'pedir ∙ R$ 25,00'} children={ReceiptImg}/>
+      <Counter data={data.price} />
 
       <Footer />
     </Container>

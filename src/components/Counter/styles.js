@@ -15,7 +15,6 @@ export const Container = styled.div`
   }
 
   button {
-    position: relative;
     padding: .4rem 5.9rem;
   }
 `;
