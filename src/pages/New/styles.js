@@ -25,4 +25,9 @@ export const Main = styled.main`
     font-size: 3.2rem;
     font-weight: 500;
   }
+
+  input {
+    background-color: ${({ theme }) => theme.COLORS.DARK_800}
+    /* display: none; */
+  }
 `;

@@ -8,6 +8,7 @@ export function InputForm({ title, type, placeholder, ...rest }) {
       <Input
         placeholder={placeholder}
         type={type}
+        {...rest}
       />
     </Container>
   );
