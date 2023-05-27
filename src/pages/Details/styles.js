@@ -25,7 +25,7 @@ export const Container = styled.div`
 
     button {
       border-radius: .3rem;
-      padding: 1rem 4.4rem 1rem 7.4rem;
+      padding: 1rem 4rem 1rem 6.8rem;
       font-size: .9rem;
       line-height: 1.6rem;
     }
