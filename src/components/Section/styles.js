@@ -19,7 +19,7 @@ export const Container = styled.section`
   }
 
   .card {
-    max-width: 21rem;
+    min-width: 21rem;
+    min-height: 29rem;
   }
-
 `;

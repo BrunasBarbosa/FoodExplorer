@@ -18,6 +18,7 @@ export function Details() {
 
     return response;
   }
+  
   const data = findById();
 
   return (

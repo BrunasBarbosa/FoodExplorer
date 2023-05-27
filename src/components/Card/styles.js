@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1.2rem;
 
   position: relative;
@@ -25,8 +26,6 @@ export const Container = styled.div`
   }
 
   > svg {
-    height: 3.2rem;
-    width: 3.2rem;
     position: absolute;
     top: 1.6rem;
     right: 1.6rem;
