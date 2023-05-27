@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.main`
+export const Container = styled.div`
   width: 100%;
-  padding: 0 5.6rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,6 +24,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  padding-bottom: 4.8rem;
 
   h1 {
     font-weight: 500;

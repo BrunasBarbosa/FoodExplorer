@@ -8,7 +8,7 @@ import { Footer } from '../../components/Footer';
 
 import { useParams } from 'react-router-dom';
 
-import { Container } from './styles';
+import { Container, Content } from './styles';
 
 export function Details() {
   const params = useParams();
@@ -18,21 +18,24 @@ export function Details() {
 
     return response;
   }
-  
+
   const data = findById();
 
   return (
     <Container>
       <HeaderUser />
-      <Return />
-      <DataDish data={{
-        image: data.image,
-        name: data.name,
-        description: data.description,
-        tags: data.tags
-      }} />
 
-      <Counter data={data.price} />
+      <Content >
+        <Return />
+        <DataDish data={{
+          image: data.image,
+          name: data.name,
+          description: data.description,
+          tags: data.tags
+        }} />
+
+        <Counter data={data.price} />
+      </Content>
 
       <Footer />
     </Container>

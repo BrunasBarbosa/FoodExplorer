@@ -7,8 +7,14 @@ export const Container = styled.div`
   justify-content: center;
   overflow: hidden;
   
+  
+`;
+
+export const Content = styled.main`
+  width: 100%;
+  padding: 3.1rem 5.6rem 4.8rem;
+
   .counter {
-    padding: 4.8rem 5.6rem 5.4rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
