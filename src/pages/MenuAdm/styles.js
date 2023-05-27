@@ -22,8 +22,11 @@ export const Main = styled.main`
     color: ${({ theme }) => theme.COLORS.GRAY_500};
   }
 
-  button {
+  button:nth-child(2) {
     margin-top: 3.6rem;
+  }
+
+  button {
     padding: 1rem;
 
     text-align: left;

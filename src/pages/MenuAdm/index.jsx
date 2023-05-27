@@ -12,6 +12,7 @@ export function MenuAdm() {
 
       <Main>
         <Input icon={IoSearchOutline} placeholder='Busque por pratos ou ingredientes' />
+        <ButtonText title='Novo prato' />
         <ButtonText title='Sair' />
       </Main>
 
