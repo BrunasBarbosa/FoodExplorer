@@ -15,8 +15,4 @@ export const Form = styled.form`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
-  input {
-    background-color: ${({ theme }) => theme.COLORS.DARK_900};
-  }
 `;

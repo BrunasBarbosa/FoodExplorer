@@ -7,7 +7,7 @@ export const Container = styled.div`
   border-radius: .8rem;
 
   color: ${({ theme }) => theme.COLORS.GRAY_400};
-  background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  background-color: ${({ theme }) => theme.COLORS.DARK_900};
 
   > input {
     width: 100%;

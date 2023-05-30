@@ -3,7 +3,9 @@ import { Container } from './styles';
 
 export function TagItem({ isNew = false, value, onClick, style, placeholder, ...rest }) {
   return (
-    <Container isNew={isNew}>
+    <Container
+      isNew={isNew}
+    >
       <input
         type="text"
         placeholder={placeholder}
@@ -16,6 +18,7 @@ export function TagItem({ isNew = false, value, onClick, style, placeholder, ...
       <button
         type="button"
         onClick={onClick}
+        style={isNew ? { color: '#76797B' } : { color: '#FFFFFF' }}
       >
         {isNew ? <FiPlus /> : <FiX />}
       </button>

@@ -44,7 +44,7 @@ export function New() {
             placeholder='Adicionar'
           />
           <TagItem
-            value='Adicionar'
+            value='Pão Naan'
           />
         </div>
 

@@ -10,12 +10,11 @@ export const Container = styled.div`
   border: ${({ theme, isNew }) => isNew ? `1px dashed ${theme.COLORS.GRAY_500}` : 'none' };
   background-color: ${({ theme, isNew }) => isNew ? 'transparent' : theme.COLORS.GRAY_600};
   
-  > button {
+  button {
     width: 1.6rem;
     height: 1.6rem;
     border: none;
     background: none;
-    color: ${({ theme }) => theme.COLORS.GRAY_600};
   }
 
   > input {

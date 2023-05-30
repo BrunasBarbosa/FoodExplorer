@@ -12,6 +12,7 @@ export const Container = styled.div`
     padding: 1.4rem;
     
     border: none;
+    resize: none;
     font-family: var(--font-secondary);
     font-size: 1.6rem;
 

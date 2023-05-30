@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-
-  
+ 
+  input {
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  }
 `;
 
 export const Main = styled.main`
@@ -48,6 +50,7 @@ export const Main = styled.main`
   }
 
   .tags {
+    margin-top: -.8rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -61,8 +64,17 @@ export const Main = styled.main`
     padding: .8rem;
     border-radius: .8rem;
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
+
+    svg {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+
+    * input {
+      background-color: transparent;
+    }
   }
-  
+
   .submit {
     background-color: ${({ theme }) => theme.COLORS.RED_100};
   }
