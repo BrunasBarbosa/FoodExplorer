@@ -1,11 +1,11 @@
 import { HeaderAdm } from '../../components/HeaderAdm';
 import { InputForm } from '../../components/InputForm';
 import { InputFile } from '../../components/InputFile';
+import { TagItem } from '../../components/TagItem';
 import { Textarea } from '../../components/Textarea';
 import { Select } from '../../components/Select';
 import { Return } from '../../components/Return';
 import { Footer } from '../../components/Footer';
-import { Upload } from '../../assets/icons/Upload';
 import { Container, Main } from './styles';
 
 export function New() {
@@ -23,8 +23,8 @@ export function New() {
         <Return />
         <h1>Novo prato</h1>
 
-        <InputFile 
-          title='Imagem do prato' 
+        <InputFile
+          title='Imagem do prato'
           text='Selecione imagem'
         />
 
@@ -35,6 +35,17 @@ export function New() {
         />
 
         <Select title='Categoria' options={options} />
+
+        <label>Ingredientes</label>
+        <div className='tags'>
+          <TagItem
+            isNew
+            placeholder="Adicionar"
+          />
+          <TagItem
+            value="Adicionar"
+          />
+        </div>
       </Main>
     </Container>
   );

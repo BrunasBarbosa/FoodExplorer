@@ -34,13 +34,34 @@ export const Main = styled.main`
 
   label:nth-child(2) {
     font-family: var(--font-main);
+    font-size: 1.4rem;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
   
   label {
+    font-size: 1.6rem;
     font-family: var(--font-secondary);
+    font-weight: 400;
+    color: ${({ theme }) => theme.COLORS.GRAY_400};
+  }
+
+  .tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    flex-wrap: wrap;
+    overflow-y: auto;
+    width: 100%;
+    height: 4.8rem;
+    
+    padding: .8rem;
+    border-radius: .8rem;
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
   }
 
   input {
-    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+    /* background-color: ${({ theme }) => theme.COLORS.DARK_800}; */
   }
 `;
