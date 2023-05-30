@@ -61,6 +61,8 @@ export function New() {
 
         <Button className='submit' type='submit' title='Salvar alterações'/>
       </Main>
+
+      <Footer />
     </Container>
   );
 }

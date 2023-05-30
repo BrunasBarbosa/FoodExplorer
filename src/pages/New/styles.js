@@ -62,11 +62,7 @@ export const Main = styled.main`
     border-radius: .8rem;
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
   }
-
-  input {
-    /* background-color: ${({ theme }) => theme.COLORS.DARK_800}; */
-  }
-
+  
   .submit {
     background-color: ${({ theme }) => theme.COLORS.RED_100};
   }

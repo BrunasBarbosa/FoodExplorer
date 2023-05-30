@@ -16,6 +16,11 @@ export const Main = styled.main`
 
   input {
     font-family: var(--font-secondary);
+    /* background-color: ${({ theme }) => theme.COLORS.DARK_900}; */
+  }
+
+  div:first-child {
+    background-color: ${({ theme }) => theme.COLORS.DARK_900};
   }
 
   input::placeholder {
