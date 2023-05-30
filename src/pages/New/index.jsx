@@ -1,10 +1,11 @@
 import { HeaderAdm } from '../../components/HeaderAdm';
 import { InputForm } from '../../components/InputForm';
 import { InputFile } from '../../components/InputFile';
-import { TagItem } from '../../components/TagItem';
 import { Textarea } from '../../components/Textarea';
+import { TagItem } from '../../components/TagItem';
 import { Select } from '../../components/Select';
 import { Return } from '../../components/Return';
+import { Button } from '../../components/Button';
 import { Footer } from '../../components/Footer';
 import { Container, Main } from './styles';
 
@@ -40,10 +41,10 @@ export function New() {
         <div className='tags'>
           <TagItem
             isNew
-            placeholder="Adicionar"
+            placeholder='Adicionar'
           />
           <TagItem
-            value="Adicionar"
+            value='Adicionar'
           />
         </div>
 
@@ -54,9 +55,11 @@ export function New() {
         />
 
         <Textarea 
-          title="Descrição"
-          placeholder="Fale brevemente sobre o prato, seus ingredientes e composição."
+          title='Descrição'
+          placeholder='Fale brevemente sobre o prato, seus ingredientes e composição.'
         />
+
+        <Button className='submit' type='submit' title='Salvar alterações'/>
       </Main>
     </Container>
   );

@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
+
+  
 `;
 
 export const Main = styled.main`
@@ -63,5 +65,9 @@ export const Main = styled.main`
 
   input {
     /* background-color: ${({ theme }) => theme.COLORS.DARK_800}; */
+  }
+
+  .submit {
+    background-color: ${({ theme }) => theme.COLORS.RED_100};
   }
 `;
