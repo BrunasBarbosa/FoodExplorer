@@ -1,11 +1,22 @@
 import styled from 'styled-components';
 
-export const Container = styled.textarea`
+export const Container = styled.div`
   width: 100%;
-  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 
-  font-family: var(--font-secondary);
+  textarea {
+    width: 100%;
+    min-height: 17.2rem;
+    padding: 1.4rem;
+    
+    border: none;
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_800};
-  color: ${({ theme }) => theme.COLORS.DARK_500};
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+    color: ${({ theme }) => theme.COLORS.GRAY_500};
+    border-radius: .8rem;
+  }
 `;

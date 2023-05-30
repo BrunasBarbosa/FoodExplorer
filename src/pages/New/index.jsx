@@ -52,6 +52,11 @@ export function New() {
           type='number'
           placeholder='R$ 00,00'
         />
+
+        <Textarea 
+          title="Descrição"
+          placeholder="Fale brevemente sobre o prato, seus ingredientes e composição."
+        />
       </Main>
     </Container>
   );
