@@ -46,6 +46,12 @@ export function New() {
             value="Adicionar"
           />
         </div>
+
+        <InputForm
+          title='Preço'
+          type='number'
+          placeholder='R$ 00,00'
+        />
       </Main>
     </Container>
   );
