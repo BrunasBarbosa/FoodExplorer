@@ -1,8 +1,9 @@
 import { Container } from './styles';
 
 export function Select({ title, options }) {
+
   return (
-    <Container >
+    <Container>
       <label>{title}</label>
       <select title={title}>
         {options &&

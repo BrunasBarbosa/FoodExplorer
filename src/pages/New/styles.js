@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-
-  
 `;
 
 export const Main = styled.main`
@@ -14,9 +12,14 @@ export const Main = styled.main`
   flex-direction: column;
   gap: 2.4rem;
 
+  > div {
+    gap: 1.6rem;
+  }
+
   div:first-child {
     font-size: 1.6rem;
-
+    gap: .4rem;
+    
     svg {
       height: 1.6rem;
       width: 1.6rem;
