@@ -20,14 +20,11 @@ export const Main = styled.main`
 
   div:first-child {
     background-color: ${({ theme }) => theme.COLORS.DARK_900};
+    margin-bottom: 3.6rem;
   }
 
   input::placeholder {
     color: ${({ theme }) => theme.COLORS.GRAY_500};
-  }
-
-  button:nth-child(2) {
-    margin-top: 3.6rem;
   }
 
   button {

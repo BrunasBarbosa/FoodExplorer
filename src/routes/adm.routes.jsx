@@ -3,7 +3,7 @@ import { HomeAdm } from '../pages/HomeAdm';
 import { MenuAdm } from '../pages/MenuAdm';
 import { DetailsAdm } from '../pages/DetailsAdm';
 import { New } from '../pages/New';
-// import { Update } from '../pages/Update';
+import { Update } from '../pages/Update';
 
 export function AdmRoutes() {
   return (
@@ -12,7 +12,7 @@ export function AdmRoutes() {
       <Route path='/menu' element={<MenuAdm />}/>
       <Route path='/details/:id' element={<DetailsAdm />}/>
       <Route path='/new' element={<New />}/>
-      {/* <Route path='/dish/:id' element={<Update />}/> */}
+      <Route path='/dish/:id' element={<Update />}/>
     </Routes>
   );
 }
