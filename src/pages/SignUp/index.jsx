@@ -3,12 +3,14 @@ import { ButtonText } from '../../components/ButtonText';
 import { InputForm } from '../../components/InputForm';
 import { Logo } from '../../components/Logo';
 import { Container, Form } from "./styles";
+import { Link } from 'react-router-dom';
 
 export function SignUp() {
   return (
     <Container >
       <Logo />
       <Form>
+        <h1>Crie sua conta</h1>
         <InputForm
           title='Seu nome'
           placeholder='Exemplo: Maria da Silva'
@@ -30,9 +32,11 @@ export function SignUp() {
           title='Criar conta'
         />
 
-        <ButtonText
-          title='Já tenho uma conta'
-        />
+        <Link to="/">
+          <ButtonText
+            title='Já tenho uma conta'
+          />
+        </Link>
       </Form>
     </Container>
   );

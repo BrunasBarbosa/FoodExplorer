@@ -11,6 +11,7 @@ export function SignIn() {
     <Container >
       <Logo />
       <Form>
+        <h1>Faça login</h1>
         <InputForm
           title='Email'
           placeholder='Exemplo: exemplo@exemplo.com.br'
