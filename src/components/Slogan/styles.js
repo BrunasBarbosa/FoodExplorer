@@ -5,6 +5,8 @@ export const Container = styled.div`
   height: clamp(12rem, 1rem + 30vw, 40rem);
   display: flex;
   position: relative;
+  padding: 0 1.6rem 0 3.2rem;
+  margin-bottom: 6.2rem;
 
   img {
     object-fit: cover;
@@ -46,5 +48,28 @@ export const Container = styled.div`
   h2,
   p {
     width: clamp(20rem, 6rem + 30vw, 60rem);
+  }
+
+  @media (min-width: 900px) {
+    padding-top: 7.6rem;
+    padding-inline: clamp(6rem, 1rem + 8vw, 12.4rem);
+    
+    h2 {
+      font-weight: 500;
+    }
+
+    > div {
+      border-radius: .8rem;
+      justify-content: center;
+    }
+
+    img {
+      width: clamp(20rem, 4rem + 45vw, 63.2rem);
+      margin-left: 5.4rem;
+    }
+
+    p {
+      font-family: var(--font-secondary);
+    }
   }
 `;

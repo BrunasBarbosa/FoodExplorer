@@ -25,4 +25,8 @@ export const Container = styled.header`
       height: 2.4rem;
     }
   }
+
+  @media (min-width: 900px) {
+      margin-bottom: 2.6rem;
+  }
 `;

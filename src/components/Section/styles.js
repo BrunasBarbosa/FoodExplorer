@@ -16,4 +16,8 @@ export const Container = styled.section`
     display: flex;
     gap: 1.6rem;
   }
+
+  @media (min-width: 900px) {
+    padding-inline: clamp(6rem, 1rem + 8vw, 12.4rem);
+  }
 `;
