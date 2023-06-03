@@ -18,7 +18,7 @@ export function Home() {
       <Content>
         <Slogan />
 
-        <div>
+        <div className='section'>
           <Section
             title='Refeições'
             data={DishesRepositoryInMemory}

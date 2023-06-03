@@ -8,10 +8,23 @@ export const Container = styled.div`
   header {
     margin-bottom: 1.5rem;
   }
+`;
 
+export const Content = styled.main`
+  width: 100%;
+  
   .slogan {
     padding: 0 1.6rem 0 3.2rem;
     margin-bottom: 6.2rem;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    padding-left: 2.4rem;
+    margin-bottom: 2.5rem;
   }
 
   @media (min-width: 900px) {
@@ -21,7 +34,6 @@ export const Container = styled.div`
     
     .slogan {
       padding-top: 7.6rem;
-      padding-inline: clamp(6rem, 1rem + 8vw, 12.4rem);
       
       * {
         font-weight: 500;
@@ -37,14 +49,14 @@ export const Container = styled.div`
         margin-left: 5.4rem;
       }
 
-
       p {
         font-family: var(--font-secondary);
       }
     }
-  }
-`;
 
-export const Content = styled.main`
-  width: 100%;
+    .section,
+    .slogan {
+      padding-inline: clamp(6rem, 1rem + 8vw, 12.4rem);
+    }
+  }
 `;

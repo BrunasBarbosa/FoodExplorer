@@ -9,7 +9,7 @@ export function Section({ title, data, icon: Icon, children }) {
 
       <div>
         {
-          data.length > 0 ?
+          data.length &&
             data.map((dishe, index) => (
               <Card
                 key={String(index)}
@@ -18,8 +18,6 @@ export function Section({ title, data, icon: Icon, children }) {
                 children={children}
               />
             ))
-            :
-            <Card />
         }
       </div>
 
