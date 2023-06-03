@@ -3,9 +3,9 @@ import { Container } from './styles';
 
 export function Slogan() {
   return (
-    <Container >
+    <Container className='slogan'>
       <img src={Macarons} alt='Imagem de macarons e frutas vermelhas' />
-      <div>
+      <div >
         <h2>Sabores inigualáveis</h2>
         <p>
           Sinta o cuidado do preparo com ingredientes selecionados.

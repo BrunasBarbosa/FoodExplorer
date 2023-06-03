@@ -6,8 +6,8 @@ import { AdmRoutes } from './adm.routes';
 export function Routes() {
   return (
     <BrowserRouter >
-      <AuthRoutes />
-      {/* <UserRoutes /> */}
+      {/* <AuthRoutes /> */}
+      <UserRoutes />
       {/* <AdmRoutes /> */}
     </BrowserRouter>
   );

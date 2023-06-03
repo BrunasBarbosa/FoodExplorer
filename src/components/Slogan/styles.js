@@ -2,43 +2,49 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  margin-bottom: 3.8rem;
-  height: 16.4rem;
+  height: clamp(12rem, 1rem + 30vw, 40rem);
   display: flex;
   position: relative;
 
   img {
-    margin-left: .6rem;
-    z-index: 1;
+    object-fit: cover;
+    object-position: 0 0;
+    width: clamp(19.1rem, 2rem + 40vw, 40rem);
+    height: 100%;
     position: absolute;
     bottom: 0;
+    left: .2rem;
+    z-index: 1;
+    filter: opacity(.8);
   }
 
   > div {
+    width: 100%;
+    height: 82%;
+    padding-right: clamp(1rem, 1rem + 3vw, 30rem);
     display: flex;
     flex-direction: column;
-    align-self: end;
     justify-content: center;
+    align-self: end;
     align-items: end;
+    border-radius: .2rem;
 
-    margin: 4.4rem 1.6rem 0 3.6rem;
-    width: 100%;
-    height: 12rem;
     background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
   }
 
   h2 {
+    white-space: nowrap;
+    font-size: clamp(.8rem, .8rem + 2.5vw, 4rem);
+    font-weight: 600;
     margin-top: .6rem;
-    font-size: 1.8rem;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, .1rem + 2.6vw, 1.6rem);
   }
 
   h2,
   p {
-    width: 20rem;
-    margin-right: 2.1rem;
+    width: clamp(20rem, 6rem + 30vw, 60rem);
   }
 `;

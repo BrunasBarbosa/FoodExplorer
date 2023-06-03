@@ -7,33 +7,38 @@ import { Slogan } from '../../components/Slogan';
 import { Footer } from '../../components/Footer';
 import { Heart } from '../../assets/icons/Heart';
 
-import { Container } from './styles';
+import { Container, Content } from './styles';
 
 export function Home() {
 
   return (
     <Container>
       <HeaderUser />
-      <Slogan />
 
-      <Section
-        title='Refeições'
-        data={DishesRepositoryInMemory}
-        icon={Heart}
-        children={<Counter title={'incluir'} />}
-      />
-      <Section
-        title='Pratos principais'
-        data={MainDishesRepositoryInMemory}
-        icon={Heart}
-        children={<Counter title={'incluir'} />}
-      />
-      <Section
-        title='Pratos principais'
-        data={MainDishesRepositoryInMemoryTwo}
-        icon={Heart}
-        children={<Counter title={'incluir'} />}
-      />
+      <Content>
+        <Slogan />
+
+        <div>
+          <Section
+            title='Refeições'
+            data={DishesRepositoryInMemory}
+            icon={Heart}
+            children={<Counter title={'incluir'} />}
+          />
+          <Section
+            title='Pratos principais'
+            data={MainDishesRepositoryInMemory}
+            icon={Heart}
+            children={<Counter title={'incluir'} />}
+          />
+          <Section
+            title='Pratos principais'
+            data={MainDishesRepositoryInMemoryTwo}
+            icon={Heart}
+            children={<Counter title={'incluir'} />}
+          />
+        </div>
+      </Content>
 
       <Footer />
     </Container>
