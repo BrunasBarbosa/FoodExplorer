@@ -24,6 +24,10 @@ export const Container = styled.div`
     }
   }
 
+  > input:focus {
+    outline: none;
+  }
+
   > svg {
     margin-left: 1.6rem;
   }
