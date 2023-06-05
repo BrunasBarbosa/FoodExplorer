@@ -25,19 +25,43 @@ export const Container = styled.header`
       height: clamp(2.1rem, 1rem + 4vw, 3.2rem);
     }
   }
+
+  input {
+    font-family: var(--font-secondary);
+  }
+
+  input::placeholder {
+    color: ${({ theme }) => theme.COLORS.GRAY_500};
+  }
   
   div:nth-child(3) {
     display: none;
   }
 
+  svg:last-child {
+    display: none;
+  }
+
   @media (min-width: 900px) {
     margin-bottom: 2.6rem;
+    padding-top: 2.8rem;
+    padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
+    gap: 3.2rem;
 
     > svg {
       display: none;
     }
 
+    div:nth-child(2){
+      max-width: 20rem;
+    }
+
     div:nth-child(3) {
+      display: flex;
+      border-radius: .5rem;
+    }
+
+    svg:last-child {
       display: flex;
     }
   }

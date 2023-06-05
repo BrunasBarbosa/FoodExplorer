@@ -1,3 +1,4 @@
+import { Logout } from '../../assets/icons/Logout';
 import { Menu } from '../../assets/icons/Menu';
 import { Container } from './styles';
 import { ReceiptCounter } from '../ReceiptCounter';
@@ -20,6 +21,9 @@ export function HeaderUser() {
       <Logo />
       <Input icon={IoSearchOutline} placeholder='Busque por pratos ou ingredientes' />
       <ReceiptCounter />
+      <div>
+        <Logout />
+      </div>
     </Container>
   );
 }
