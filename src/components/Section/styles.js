@@ -5,6 +5,9 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
 
+  overflow-y: hidden;
+  overflow-x: auto;
+
   h3 {
     line-height: 2.5rem;
     font-size: clamp(1.8rem, .5rem + 2vw, 3.2rem);
@@ -15,9 +18,5 @@ export const Container = styled.section`
   > div {
     display: flex;
     gap: 1.6rem;
-  }
-
-  @media (min-width: 900px) {
-    padding-inline: clamp(6rem, 1rem + 8vw, 12.4rem);
   }
 `;

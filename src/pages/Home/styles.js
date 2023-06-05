@@ -14,6 +14,7 @@ export const Content = styled.main`
   width: 100%;
 
   .section {
+    padding-inline: clamp(2.4rem, 1.8rem + 7vw, 12.4rem);
     display: flex;
     flex-direction: column;
     gap: 2.4rem;

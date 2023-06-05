@@ -11,14 +11,16 @@ export function Card({ data, children, icon: Icon, ...rest }) {
   return (
     <Container
       className='card'
-      onClick={() => handleDetails(data.id)}
       {...rest}
     >
-      <img src={data.image} alt={`Imagem de ${data.name}`} />
-      {Icon && <Icon />}
+      <div onClick={() => handleDetails(data.id)}>
+        <img src={data.image} alt={`Imagem de ${data.name}`} />
+        {Icon && <Icon />}
 
-      <p>{data.name} {`>`}</p>
-      <span>R$ {data.price}</span>
+        <p>{data.name} {`>`}</p>
+        <p className='description'>{data.description}</p>
+        <span>R$ {data.price}</span>
+      </div>
 
       {children && children}
     </Container>

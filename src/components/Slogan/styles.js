@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: clamp(12rem, 1rem + 30vw, 40rem);
+  height: clamp(12rem, 1rem + 30vw, 39rem);
   display: flex;
   position: relative;
   padding: 0 1.6rem 0 3.2rem;
@@ -17,12 +17,12 @@ export const Container = styled.div`
     bottom: 0;
     left: .2rem;
     z-index: 1;
-    filter: opacity(.8);
+    filter: opacity(.9);
   }
 
   > div {
     width: 100%;
-    height: 82%;
+    height: 84%;
     padding-right: clamp(1rem, 1rem + 3vw, 30rem);
     display: flex;
     flex-direction: column;
