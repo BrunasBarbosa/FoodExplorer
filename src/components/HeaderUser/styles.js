@@ -24,7 +24,6 @@ export const Container = styled.header`
     img {
       height: clamp(2.1rem, 1rem + 4vw, 3.2rem);
     }
-
   }
   
   div:nth-child(3) {

@@ -1,4 +1,4 @@
-import ReceiptImg from '../../assets/icons/Receipt.svg';
+import { Receipt } from '../../assets/icons/Receipt';
 
 import { Container } from './styles';
 import { Button } from '../Button';
@@ -6,7 +6,7 @@ import { Button } from '../Button';
 export function ButtonDetails({ title }) {
   return (
     <Container>
-      <img src={ReceiptImg} alt='Icone de cupom de pedido' />
+      <Receipt alt='Icone de cupom de pedido' />
       <Button title={title} />
     </Container>
   );

@@ -1,6 +1,6 @@
 import { Menu } from '../../assets/icons/Menu';
 import { Container } from './styles';
-import { Receipt } from '../Receipt';
+import { ReceiptCounter } from '../ReceiptCounter';
 import { Input } from '../Input';
 import { Logo } from '../Logo';
 import { IoSearchOutline } from 'react-icons/io5';
@@ -19,7 +19,7 @@ export function HeaderUser() {
       <Menu alt='Icone de barra de menu' onClick={HandleOpenMenu} />
       <Logo />
       <Input icon={IoSearchOutline} placeholder='Busque por pratos ou ingredientes' />
-      <Receipt />
+      <ReceiptCounter />
     </Container>
   );
 }

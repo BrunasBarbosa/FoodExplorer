@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   position: relative;
   
-  img {
+  svg {
     z-index: 1;
     position: absolute;
     width: 2rem;

@@ -28,7 +28,7 @@ export const Content = styled.div`
       line-height: 2.4rem;
     }
     
-    img {
+    svg {
       height: 2.4rem;
     }
   }
