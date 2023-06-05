@@ -26,13 +26,13 @@ export function Home() {
             children={<Counter title={'incluir'} />}
           />
           <Section
-            title='Pratos principais'
+            title='Sobremesas'
             data={MainDishesRepositoryInMemory}
             icon={Heart}
             children={<Counter title={'incluir'} />}
           />
           <Section
-            title='Pratos principais'
+            title='Bebidas'
             data={MainDishesRepositoryInMemoryTwo}
             icon={Heart}
             children={<Counter title={'incluir'} />}

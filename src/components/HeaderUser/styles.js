@@ -17,16 +17,29 @@ export const Container = styled.header`
     justify-content: center;
 
     p {
-      font-size: 2.1rem;
+      font-size: clamp(2.1rem, 1rem + 2vw, 2.6rem);
       line-height: 2.4rem;
     }
-    
+
     img {
-      height: 2.4rem;
+      height: clamp(2.1rem, 1rem + 4vw, 3.2rem);
     }
+
+  }
+  
+  div:nth-child(3) {
+    display: none;
   }
 
   @media (min-width: 900px) {
-      margin-bottom: 2.6rem;
+    margin-bottom: 2.6rem;
+
+    > svg {
+      display: none;
+    }
+
+    div:nth-child(3) {
+      display: flex;
+    }
   }
 `;
