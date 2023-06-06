@@ -13,23 +13,27 @@ export const Container = styled.footer`
 
   white-space: nowrap;
 
-   > div {
-     gap: .8rem;
+  > div {
+    gap: .8rem;
      
-     filter: grayscale(80%);
-      
-      img {
-        height: 1.8rem;
-      }
+    filter: grayscale(80%);
+    color: ${({ theme }) => theme.COLORS.GRAY_700};
 
-      p {
-        color: ${({ theme }) => theme.COLORS.GRAY_700};
-        font-size: 1.5rem;
-     }
-   }
+    p {
+      font-size: clamp(1.5rem, .6rem + 2vw, 2.4rem);
+    }
 
-  p {
+    img {
+      width: clamp(1.5rem, .6rem + 2vw, 2.4rem);
+    }
+  }
+
+  > p {
     font-size: 1.15rem;
     line-height: 1.6rem;
+  }
+
+  @media (min-width: 900px) {
+    padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
   }
 `;

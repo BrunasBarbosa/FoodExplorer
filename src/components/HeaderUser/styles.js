@@ -17,12 +17,7 @@ export const Container = styled.header`
     justify-content: center;
 
     p {
-      font-size: clamp(2.1rem, 1rem + 2vw, 2.6rem);
       line-height: 2.4rem;
-    }
-
-    img {
-      height: clamp(2.1rem, 1rem + 4vw, 3.2rem);
     }
   }
 
