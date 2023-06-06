@@ -36,4 +36,9 @@ export const Content = styled.div`
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
+
+  > svg {
+    width: 1.8rem;
+    height: 1.4rem;
+  }
 `;

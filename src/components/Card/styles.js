@@ -24,7 +24,7 @@ export const Container = styled.div`
 
     p {
       text-align: center;
-      font-size: clamp(1.4rem, .8rem + 1.2vw, 2.4rem);
+      font-size: clamp(1.4rem, .6rem + 1.2vw, 2.4rem);
     }
 
     .description {

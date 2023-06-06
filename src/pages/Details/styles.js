@@ -24,11 +24,6 @@ export const Content = styled.main`
       font-weight: 700;
     }
 
-    svg {
-      height: 2.7rem;
-      width: 2.7rem;
-    }
-
     button {
       border-radius: .3rem;
       padding: 1rem 4rem 1rem 6.8rem;

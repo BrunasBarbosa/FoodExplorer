@@ -7,8 +7,6 @@ export const Container = styled.div`
   svg {
     z-index: 1;
     position: absolute;
-    width: 2rem;
-    height: 2rem;
     left: 5rem;
   }
 `;

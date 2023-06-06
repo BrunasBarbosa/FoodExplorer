@@ -15,8 +15,4 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.GRAY_400};
     font-size: 1.6rem;
   }
-
-  input {
-    color: ${({ theme }) => theme.COLORS.GRAY_500};
-  }
 `;
