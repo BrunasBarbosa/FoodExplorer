@@ -6,6 +6,8 @@ export const Container = styled.div`
 
 export const Main = styled.main`
   width: 100%;
+  height: 100vh;
+
   min-height: 71.2rem;
   padding: 3.6rem 2.8rem 0;
   margin-bottom: 1.3rem;

@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 export function Counter({ title, data, ...rest }) {
   const [amount, setAmount] = useState(1);
+  let text = 'pedir';
 
   function handlePlusAmount() {
     return setAmount(prevState => prevState + 1);
@@ -31,7 +32,7 @@ export function Counter({ title, data, ...rest }) {
       </div>
 
       {
-        data ? <ButtonDetails title={`pedir ∙ R$  ${data}`} />
+        data ? <ButtonDetails title={`${text} ∙ R$  ${data}`} />
           :
           <Button title={title} />
       }

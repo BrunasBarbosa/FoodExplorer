@@ -25,8 +25,4 @@ export const Container = styled.div`
       height: 1.7rem;
     }
   }
-
-  button {
-    padding: .4rem 5.9rem;
-  }
 `;

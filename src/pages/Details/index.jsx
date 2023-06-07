@@ -2,7 +2,6 @@ import { DishesRepositoryInMemory, MainDishesRepositoryInMemory, MainDishesRepos
 
 import { HeaderUser } from '../../components/HeaderUser';
 import { DataDish } from '../../components/DataDish';
-import { Counter } from '../../components/Counter';
 import { Return } from '../../components/Return';
 import { Footer } from '../../components/Footer';
 
@@ -31,10 +30,9 @@ export function Details() {
           image: data.image,
           name: data.name,
           description: data.description,
-          tags: data.tags
+          tags: data.tags,
+          price: data.price
         }} />
-
-        <Counter data={data.price} />
       </Content>
 
       <Footer />

@@ -10,7 +10,6 @@ import { Heart } from '../../assets/icons/Heart';
 import { Container, Content } from './styles';
 
 export function Home() {
-
   return (
     <Container>
       <HeaderUser />

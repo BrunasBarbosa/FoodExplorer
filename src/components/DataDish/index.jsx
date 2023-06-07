@@ -1,3 +1,4 @@
+import { Counter } from '../Counter';
 import { Tag } from '../Tag';
 
 import { Container, Content } from './styles';
@@ -15,11 +16,13 @@ export function DataDish({ data }) {
 
         {
           data.tags &&
-          <div >
+          <div className='tags'>
             {data.tags.map((tag, index) => <Tag key={index} title={tag.name} />)}
           </div>
         }
+      <Counter data={data.price} />
       </Content>
+      
     </Container>
   );
 }

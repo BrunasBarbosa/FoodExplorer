@@ -2,31 +2,23 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 11.4rem auto;
+  grid-area: 
+  "header"
+  "content";
+  overflow: auto;
 `;
 
 export const Content = styled.main`
   width: 100%;
   padding: 3.1rem 5.6rem 4.8rem;
 
-  .counter {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  grid-area: content;
 
-    span {
-      font-size: 2.2rem;
-      font-weight: 700;
-    }
-
-    button {
-      border-radius: .3rem;
-      padding: 1rem 4rem 1rem 6.8rem;
-      font-size: .9rem;
-      line-height: 1.6rem;
-    }
+  @media (min-width: 900px) {
+    padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
   }
 `;
