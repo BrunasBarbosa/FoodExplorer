@@ -19,4 +19,9 @@ export const Container = styled.section`
     display: flex;
     gap: 1.6rem;
   }
+
+  .card {
+    min-width: 21rem;
+    min-height: 30rem;
+  }
 `;

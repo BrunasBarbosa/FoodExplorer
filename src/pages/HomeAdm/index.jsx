@@ -15,22 +15,23 @@ export function HomeAdm() {
     <Container>
       <HeaderAdm />
       <Slogan />
-
-      <Section
-        title='Refeições'
-        data={DishesRepositoryInMemory}
-        icon={Pencil}
-      />
-      <Section
-        title='Pratos principais'
-        data={MainDishesRepositoryInMemory}
-        icon={Pencil}
-      />
-      <Section
-        title='Pratos principais'
-        data={MainDishesRepositoryInMemoryTwo}
-        icon={Pencil}
-      />
+      <div className='section'>
+        <Section
+          title='Refeições'
+          data={DishesRepositoryInMemory}
+          icon={Pencil}
+        />
+        <Section
+          title='Pratos principais'
+          data={MainDishesRepositoryInMemory}
+          icon={Pencil}
+        />
+        <Section
+          title='Pratos principais'
+          data={MainDishesRepositoryInMemoryTwo}
+          icon={Pencil}
+        />
+      </div>
 
       <Footer />
     </Container>

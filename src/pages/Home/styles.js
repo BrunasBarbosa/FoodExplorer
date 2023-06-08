@@ -18,10 +18,10 @@ export const Content = styled.main`
   button {
     padding: .4rem 5.9rem;
   }
-
+  
   .section {
-    padding-left: 2.4rem;
     display: flex;
+    padding-left: 2.4rem;
     flex-direction: column;
     gap: 2.4rem;
 

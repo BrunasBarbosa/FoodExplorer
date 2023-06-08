@@ -17,6 +17,10 @@ export const Content = styled.main`
   width: 100%;
   padding: 0 5.6rem 4.8rem;
 
+  .return {
+    padding: 3.6rem 0 1.6rem;
+  }
+
   @media (min-width: 900px) {
     padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
     

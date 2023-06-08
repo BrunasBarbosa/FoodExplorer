@@ -17,7 +17,7 @@ export function Counter({ title, data, ...rest }) {
   function handlePlusAmount() {
     setAmount(prevState => {
       const result = Number(prevState) + 1;
-      return (formatCounter(result));
+      return formatCounter(result);
     });
   }
 
@@ -30,7 +30,7 @@ export function Counter({ title, data, ...rest }) {
 
     setAmount(prevState => {
       const result = Number(prevState) - 1;
-      return (formatCounter(result));
+      return formatCounter(result);
     });
   }
 

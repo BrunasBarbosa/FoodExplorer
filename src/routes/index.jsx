@@ -7,8 +7,8 @@ export function Routes() {
   return (
     <BrowserRouter >
       {/* <AuthRoutes /> */}
-      <UserRoutes />
-      {/* <AdmRoutes /> */}
+      {/* <UserRoutes /> */}
+      <AdmRoutes />
     </BrowserRouter>
   );
 }
