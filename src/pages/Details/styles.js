@@ -5,20 +5,24 @@ export const Container = styled.div`
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 11.4rem auto;
+  grid-template-rows: auto 1fr auto;
   grid-area: 
   "header"
-  "content";
+  "content"
+  "footer";
   overflow: auto;
 `;
 
 export const Content = styled.main`
   width: 100%;
-  padding: 3.1rem 5.6rem 4.8rem;
-
-  grid-area: content;
+  padding: 0 5.6rem 4.8rem;
 
   @media (min-width: 900px) {
     padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
+    
+    .return {
+      margin-bottom: 4.2rem;
+    }
   }
+
 `;

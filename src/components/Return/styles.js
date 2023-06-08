@@ -12,4 +12,8 @@ export const Container = styled.div`
     height: 2.2rem;
     width: 2.2rem;
   }
+
+  @media (min-width: 900px) {
+    font-weight: 700;
+  }
 `;

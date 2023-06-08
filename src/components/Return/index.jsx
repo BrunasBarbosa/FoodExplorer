@@ -11,7 +11,7 @@ export function Return() {
   }
 
   return (
-    <Container onClick={handleBack}>
+    <Container onClick={handleBack} className='return'>
       <SlArrowLeft />
       voltar
     </Container>

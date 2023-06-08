@@ -6,10 +6,10 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
+  gap: 1.6rem;
 
   img {
     width: clamp(32rem, 15rem + 30vw, 48rem);
-    /* padding: 1.6rem 2.6rem; */
   }
 
   .tags {
@@ -37,6 +37,7 @@ export const Container = styled.div`
 
   @media (min-width: 900px) {
     flex-direction: row;
+    gap: 4.8rem;
 
     text-align: left;
 

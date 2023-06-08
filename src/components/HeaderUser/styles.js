@@ -38,6 +38,7 @@ export const Container = styled.header`
   }
 
   @media (min-width: 900px) {
+    height: 10.4rem;
     margin-bottom: 2.6rem;
     padding-top: 2.8rem;
     padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);

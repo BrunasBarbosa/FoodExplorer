@@ -19,10 +19,21 @@ export const Container = styled.div`
     }
   }
 
-  div:nth-child(2) {
+  .button-details {
+    padding: 1rem 4rem 1rem 6.8rem;
+    font-size: clamp( .9rem, .2rem + 2vw, 1.4rem);
+    
     svg {
       width: 1.7rem;
       height: 1.7rem;
+    }
+
+    @media (min-width: 700px) {
+      padding: 1.2rem 2.4rem;
+
+      svg {
+        display: none;
+      }
     }
   }
 `;
