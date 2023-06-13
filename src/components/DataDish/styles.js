@@ -6,9 +6,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 1.6rem;
 
   img {
+    padding: 1.6rem 2.6rem;
     width: clamp(32rem, 15rem + 30vw, 48rem);
   }
 
@@ -31,8 +31,12 @@ export const Container = styled.div`
 
     button {
       border-radius: .3rem;
-      line-height: 1.6rem;
+      line-height: clamp(1.6rem, .8rem + 2vw, 2.4rem);
     }
+  }
+
+  .edit-button {
+    margin-top: 2.4rem;
   }
 
   @media (min-width: 900px) {
@@ -40,6 +44,10 @@ export const Container = styled.div`
     gap: 4.8rem;
 
     text-align: left;
+
+    img {
+      padding: 0;
+    }
 
     div {
       h1 {
@@ -49,11 +57,11 @@ export const Container = styled.div`
 
     .tags {
       justify-content: left;
-      margin-bottom: 2.4rem;
     }
 
     .counter {
       width: 30rem;
+      margin-top: 2.4rem;
       gap: 3.3rem;
     }
   }

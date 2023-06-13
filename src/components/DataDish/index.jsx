@@ -1,3 +1,4 @@
+import { Button } from '../Button';
 import { Counter } from '../Counter';
 import { Tag } from '../Tag';
 
@@ -20,9 +21,11 @@ export function DataDish({ data }) {
             {data.tags.map((tag, index) => <Tag key={index} title={tag.name} />)}
           </div>
         }
-      <Counter data={data.price} />
+
+        <Counter data={data.price} />
+        <Button className='edit-button' title='Editar prato' />
       </Content>
-      
+
     </Container>
   );
 }

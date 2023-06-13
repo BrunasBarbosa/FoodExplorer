@@ -15,10 +15,10 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   width: 100%;
-  padding: 0 5.6rem 4.8rem;
+  padding: 3.6rem 5.6rem 4.8rem;
 
-  .return {
-    padding: 3.6rem 0 1.6rem;
+  .edit-button {
+    display: none;
   }
 
   @media (min-width: 900px) {

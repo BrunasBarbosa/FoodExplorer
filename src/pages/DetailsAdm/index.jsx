@@ -24,6 +24,7 @@ export function DetailsAdm() {
   return (
     <Container>
       <HeaderAdm />
+
       <Content >
         <Return />
         <DataDish data={{
@@ -32,8 +33,6 @@ export function DetailsAdm() {
           description: data.description,
           tags: data.tags
         }} />
-
-        <Button title='Editar prato' />
       </Content>
 
       <Footer />
