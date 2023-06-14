@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
- 
-  input {
-    background-color: ${({ theme }) => theme.COLORS.DARK_800};
-  }
 `;
 
 export const Main = styled.main`
@@ -16,18 +12,16 @@ export const Main = styled.main`
   flex-direction: column;
   gap: 2.4rem;
 
+  input {
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  }
+
   > div {
     gap: 1.6rem;
   }
 
   div:first-child {
-    font-size: 1.6rem;
     gap: .4rem;
-    
-    svg {
-      height: 1.6rem;
-      width: 1.6rem;
-    }
   }
 
   h1 {
@@ -76,7 +70,6 @@ export const Main = styled.main`
 
   .buttons {
     display: flex;
-    /* justify-content: space-between; */
     gap: 2.8rem;
     white-space: nowrap;
   }
@@ -88,5 +81,9 @@ export const Main = styled.main`
 
   .submit {
     background-color: ${({ theme }) => theme.COLORS.RED_100};
+  }
+
+  @media (min-width: 900px) {
+    
   }
 `;

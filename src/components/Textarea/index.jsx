@@ -1,10 +1,10 @@
 import { Container } from './styles';
 
-export function Textarea({ value, title, placeholder, ...rest }) {
+export function Textarea({ title, placeholder, value, ...rest }) {
   return (
     <Container {...rest}>
       <label>{title}</label>
-      <textarea name="" id="" {...rest}>{placeholder || value}</textarea>
+      <textarea name="" id="" defaultValue={placeholder || value}></textarea>
     </Container>
   );
 }

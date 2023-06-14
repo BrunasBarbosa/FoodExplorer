@@ -3,10 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
- 
-  input {
-    background-color: ${({ theme }) => theme.COLORS.DARK_800};
-  }
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-area:  
+  "header"
+  "content"
+  "footer";
 `;
 
 export const Main = styled.main`
@@ -17,24 +19,29 @@ export const Main = styled.main`
   flex-direction: column;
   gap: 2.4rem;
 
-  > div {
+  input {
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  }
+  
+  .return {
+    gap: .4rem;
+  }
+  
+  .input-form {
     gap: 1.6rem;
   }
 
-  div:first-child {
-    font-size: 1.6rem;
-    gap: .4rem;
-    
-    svg {
-      height: 1.6rem;
-      width: 1.6rem;
-    }
+  section,
+  .input-tags {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   }
-
+  
   h1 {
     font-size: 3.2rem;
     font-weight: 500;
-    margin: 0 0 1.2rem .3rem;
   }
 
   label:nth-child(2) {
@@ -51,7 +58,6 @@ export const Main = styled.main`
   }
 
   .tags {
-    margin-top: -.8rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -59,7 +65,6 @@ export const Main = styled.main`
 
     flex-wrap: wrap;
     overflow-y: auto;
-    width: 100%;
     height: 4.8rem;
     
     padding: .8rem;
@@ -78,5 +83,22 @@ export const Main = styled.main`
 
   .submit {
     background-color: ${({ theme }) => theme.COLORS.RED_100};
+  }
+
+  @media (min-width: 900px) {
+    padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
+    gap: 3.2rem;
+    display: grid;
+
+    section {
+      flex-direction: row;
+      gap: 3.2rem;
+    }
+
+    .submit {
+      justify-self: end;
+      padding: 1.2rem 2.4rem;
+      max-width: 17.2rem;
+    }
   }
 `;

@@ -15,12 +15,19 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_200};
   border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
   border-radius: .8rem;
+  
+  svg {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+  }
 
   > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
+    cursor: pointer; 
 
     p {
       text-align: center;
@@ -39,12 +46,6 @@ export const Container = styled.div`
     svg {
       height: 2.6rem;
       width: 2.6rem;
-    }
-
-    > svg {
-      position: absolute;
-      top: 1.6rem;
-      right: 1.6rem;
     }
 
     img {
@@ -71,7 +72,7 @@ export const Container = styled.div`
       font-weight: 700;
     }
     
-    p:nth-child(4) {
+    p:nth-child(3) {
       display: block;
     }
 
@@ -84,6 +85,5 @@ export const Container = styled.div`
         padding: 1.2rem 2.4rem;
       }
     }
-
   }
 `;

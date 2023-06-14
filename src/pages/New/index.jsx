@@ -23,43 +23,48 @@ export function New() {
       <Main >
         <Return />
         <h1>Novo prato</h1>
-
-        <InputFile
-          title='Imagem do prato'
-          text='Selecione imagem'
-        />
-
-        <InputForm
-          title='Nome'
-          type='text'
-          placeholder='Ex.: Salada Ceasar'
-        />
-
-        <Select title='Categoria' options={options} />
-
-        <label>Ingredientes</label>
-        <div className='tags'>
-          <TagItem
-            isNew
-            placeholder='Adicionar'
+        <section>
+          <InputFile
+            title='Imagem do prato'
+            text='Selecione imagem'
           />
-          <TagItem
-            value='Pão Naan'
+
+          <InputForm
+            title='Nome'
+            type='text'
+            placeholder='Ex.: Salada Ceasar'
           />
-        </div>
 
-        <InputForm
-          title='Preço'
-          type='number'
-          placeholder='R$ 00,00'
-        />
+          <Select title='Categoria' options={options} />
+        </section>
 
-        <Textarea 
+        <section>
+          <div className='input-tags'>
+            <label>Ingredientes</label>
+            <div className='tags'>
+              <TagItem
+                isNew
+                placeholder='Adicionar'
+              />
+              <TagItem
+                value='Pão Naan'
+              />
+            </div>
+          </div>
+
+          <InputForm
+            title='Preço'
+            type='number'
+            placeholder='R$ 00,00'
+          />
+        </section>
+
+        <Textarea
           title='Descrição'
           placeholder='Fale brevemente sobre o prato, seus ingredientes e composição.'
         />
 
-        <Button className='submit' type='submit' title='Salvar alterações'/>
+        <Button className='submit' type='submit' title='Salvar alterações' />
       </Main>
 
       <Footer />

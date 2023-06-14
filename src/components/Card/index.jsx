@@ -13,9 +13,9 @@ export function Card({ data, children, icon: Icon, ...rest }) {
       className='card'
       {...rest}
     >
+      {Icon && <Icon />}
       <div onClick={() => handleDetails(data.id)}>
         <img src={data.image} alt={`Imagem de ${data.name}`} />
-        {Icon && <Icon />}
 
         <p>{data.name} {`>`}</p>
         <p className='description'>{data.description}</p>

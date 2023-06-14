@@ -17,7 +17,7 @@ export const Container = styled.div`
     background: none;
   }
 
-  > input {
+  input {
     border: none;
     font-family: var(--font-secondary);
     font-weight: 400;

@@ -3,7 +3,7 @@ import { Container } from './styles';
 
 export function InputForm({ title, type, placeholder, ...rest }) {
   return (
-    <Container >
+    <Container className='input-form'>
       <label>{title}</label>
       <Input
         placeholder={placeholder}
