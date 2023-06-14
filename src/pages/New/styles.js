@@ -64,7 +64,6 @@ export const Main = styled.main`
     gap: 1.6rem;
 
     flex-wrap: wrap;
-    overflow-y: auto;
     height: 4.8rem;
     
     padding: .8rem;
@@ -89,10 +88,15 @@ export const Main = styled.main`
     padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
     gap: 3.2rem;
     display: grid;
-
+    
     section {
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 3fr 2fr;
       gap: 3.2rem;
+    }
+
+    .large-section {
+      grid-template-columns: 3fr 1fr;
     }
 
     .submit {

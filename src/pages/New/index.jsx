@@ -38,7 +38,7 @@ export function New() {
           <Select title='Categoria' options={options} />
         </section>
 
-        <section>
+        <section className='large-section'>
           <div className='input-tags'>
             <label>Ingredientes</label>
             <div className='tags'>
