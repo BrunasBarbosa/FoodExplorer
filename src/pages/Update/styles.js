@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-area:  
+  "header"
+  "content"
+  "footer";
 `;
 
 export const Main = styled.main`
@@ -16,12 +22,20 @@ export const Main = styled.main`
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
   }
 
-  > div {
+  .input-form {
     gap: 1.6rem;
   }
 
-  div:first-child {
+  .return {
     gap: .4rem;
+  }
+
+  section,
+  .input-tags {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   }
 
   h1 {
@@ -44,14 +58,12 @@ export const Main = styled.main`
   }
 
   .tags {
-    margin-top: -.8rem;
     width: 100%;
     display: flex;
     align-items: center;
     gap: 1.6rem;
 
     flex-wrap: wrap;
-    overflow-y: auto;
     width: 100%;
     height: 4.8rem;
     
@@ -84,6 +96,22 @@ export const Main = styled.main`
   }
 
   @media (min-width: 900px) {
+    padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
+    gap: 3.2rem;
+    display: grid;
     
+    section {
+      display: grid;
+      grid-template-columns: 1fr 3fr 2fr;
+      gap: 3.2rem;
+    }
+
+    .large-section {
+      grid-template-columns: 3fr 1fr;
+    }
+
+    .buttons {
+      justify-self: end;
+    }
   }
 `;

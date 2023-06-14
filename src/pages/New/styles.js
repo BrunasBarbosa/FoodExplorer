@@ -42,6 +42,7 @@ export const Main = styled.main`
   h1 {
     font-size: 3.2rem;
     font-weight: 500;
+    margin: 0 0 1.2rem .3rem;
   }
 
   label:nth-child(2) {

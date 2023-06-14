@@ -23,45 +23,49 @@ export function Update() {
       <Main >
         <Return />
         <h1>Editar prato</h1>
-
-        <InputFile
-          title='Imagem do prato'
-          text='Selecione imagem para alterá-la'
-        />
-
-        <InputForm
-          title='Nome'
-          type='text'
-          value='Salada César'
-        />
-
-        <Select title='Categoria' options={options} />
-
-        <label>Ingredientes</label>
-        <div className='tags'>
-          <TagItem
-            isNew
-            placeholder='Adicionar'
+        <section>
+          <InputFile
+            title='Imagem do prato'
+            text='Selecione imagem'
           />
-          <TagItem
-            value='Pão Naan'
+
+          <InputForm
+            title='Nome'
+            type='text'
+            value='Salada César'
           />
-        </div>
 
-        <InputForm
-          title='Preço'
-          type='number'
-          placeholder='R$ 40,00'
-        />
+          <Select title='Categoria' options={options} />
+        </section>
 
-        <Textarea 
+        <section className='large-section'>
+          <div className='input-tags'>
+            <label>Ingredientes</label>
+            <div className='tags'>
+              <TagItem
+                isNew
+                placeholder='Adicionar'
+              />
+              <TagItem
+                value='Pão Naan'
+              />
+            </div>
+          </div>
+
+          <InputForm
+            title='Preço'
+            type='number'
+            placeholder='R$ 40,00'
+          />
+        </section>
+        <Textarea
           title='Descrição'
           value='A Salada César é uma opção refrescante para o verão.'
         />
 
         <div className='buttons'>
-          <Button className='delete' type='button' title='Excluir prato'/>
-          <Button className='submit' type='submit' title='Salvar alterações'/>
+          <Button className='delete' type='button' title='Excluir prato' />
+          <Button className='submit' type='submit' title='Salvar alterações' />
         </div>
       </Main>
 
