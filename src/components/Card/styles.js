@@ -16,7 +16,7 @@ export const Container = styled.div`
   border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
   border-radius: .8rem;
   
-  svg {
+  > svg {
     position: absolute;
     top: 1.6rem;
     right: 1.6rem;
