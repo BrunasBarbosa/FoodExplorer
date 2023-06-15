@@ -31,5 +31,4 @@ export const Content = styled.main`
       padding-inline: clamp(2.4rem, 1.8rem + 7vw, 12.4rem);
     }
   }
-
 `;
