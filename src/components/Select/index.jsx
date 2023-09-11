@@ -1,7 +1,12 @@
 import { Container } from './styles';
 
-export function Select({ title, options }) {
-
+export function Select({ title }) {
+  const options = [
+    { value: 'Entradas' },
+    { value: 'Prato principal' },
+    { value: 'Sobremesa' },
+    { value: 'Bebidas' },
+  ];
   return (
     <Container>
       <label>{title}</label>

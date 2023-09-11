@@ -10,13 +10,7 @@ import { Footer } from '../../components/Footer';
 import { Container, Main } from './styles';
 
 export function Update() {
-  const options = [
-    { value: 'Refeição' },
-    { value: 'Bebida' },
-    { value: 'Sobremesa' },
-    { value: 'Sapato' },
-    { value: 'Galinha' },
-  ];
+
   return (
     <Container >
       <HeaderAdm />
@@ -35,7 +29,7 @@ export function Update() {
             value='Salada César'
           />
 
-          <Select title='Categoria' options={options} />
+          <Select title='Categoria' />
         </section>
 
         <section className='large-section'>

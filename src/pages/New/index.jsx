@@ -14,12 +14,6 @@ import { useState } from 'react';
 // import dishPlaceholder from '../../assets/dishes/recipe-placeholder.svg';
 
 export function New() {
-  const options = [
-    { value: 'Refeição' },
-    { value: 'Bebida' },
-    { value: 'Sobremesa' },
-    { value: 'Galinha' },
-  ];
 
   // const imageURL = dish.image ? `${api.defaults.baseURL}files/${dish.avatar}` : dishPlaceholder;
   // const [image, setImage] = useState(imageURL);
@@ -90,7 +84,7 @@ export function New() {
             onChange={e => setName(e.target.value)}
           />
 
-          <Select title='Categoria' options={options} onChange={e => setCategory(e.target.value)} />
+          <Select title='Categoria' onChange={e => setCategory(e.target.value)} />
         </section>
 
         <section className='large-section'>
