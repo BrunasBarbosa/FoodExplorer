@@ -21,12 +21,16 @@ export const Content = styled.main`
     display: none;
   }
 
+  .return {
+    max-width: 10rem;
+    font-size: 2.4rem;
+  }
+
   @media (min-width: 900px) {
     padding-inline: clamp(12.3rem, 2rem + 8vw, 40rem);
     
     .return {
       margin-bottom: 4.2rem;
-      font-size: 2.4rem;
     }
   }
 

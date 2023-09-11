@@ -25,6 +25,7 @@ export const Content = styled.main`
   }
 
   .return {
+    max-width: 10rem;
     font-size: 2.4rem;
   }
 

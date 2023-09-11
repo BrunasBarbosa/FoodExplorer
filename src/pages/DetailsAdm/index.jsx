@@ -31,7 +31,8 @@ export function DetailsAdm() {
           image: data.image,
           name: data.name,
           description: data.description,
-          tags: data.tags
+          tags: data.tags,
+          id: data.id
         }} />
       </Content>
 

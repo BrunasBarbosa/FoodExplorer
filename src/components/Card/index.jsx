@@ -13,7 +13,7 @@ export function Card({ data, children, icon: Icon, ...rest }) {
       className='card'
       {...rest}
     >
-      {Icon && <Icon />}
+      {Icon && <Icon data={data}/>}
       <div onClick={() => handleDetails(data.id)}>
         <img src={data.image} alt={`Imagem de ${data.name}`} />
 

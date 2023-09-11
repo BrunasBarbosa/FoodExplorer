@@ -36,6 +36,7 @@ export const Container = styled.div`
 
   input {
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
-    display: none;
+    width: .1rem;
+    opacity: 0;
   }
 `;

@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import { Container } from './styles';
 
-export function Pencil() {
+export function Pencil({ data }) {
   const navigate = useNavigate();
 
   function handleEditDish() {
-    return navigate('/dish/:id');
+    return navigate(`/dish/${data.id}`);
   }
 
   return (
