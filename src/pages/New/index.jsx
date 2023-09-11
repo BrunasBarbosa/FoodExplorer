@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Main } from './styles';
 import { api } from '../../services/api';
 import { useState } from 'react';
-// import dishPlaceholder from '../../assets/dishes/recipe-placeholder.svg';
+
 
 export function New() {
 

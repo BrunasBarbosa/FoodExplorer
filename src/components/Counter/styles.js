@@ -14,6 +14,7 @@ export const Container = styled.div`
     gap: 1.4rem;
 
     svg {
+      cursor: pointer;
       width: 2.7rem;
       height: 2.7rem;
     }

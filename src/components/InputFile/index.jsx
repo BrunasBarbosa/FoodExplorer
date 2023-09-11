@@ -1,8 +1,15 @@
+// import dishPlaceholder from '../../assets/dishes/recipe-placeholder.svg';
 import { Upload } from '../../assets/icons/Upload';
+// import { api } from '../../services/api';
 import { Container } from './styles';
 import { useRef } from 'react';
 
-export function InputFile({ title, text, ...rest }) {
+export function InputFile({ title, text, onUpload, dish, ...rest }) {
+  // const imageURL = dish.image ? `${api.defaults.baseURL}files/${dish.image}` : dishPlaceholder;
+
+  // const [image, setImage] = useState(imageURL);
+  // const [imageFile, setImageFile] = useState(null);
+
   const inputRef = useRef(null);
 
   function handleDivClick() {
@@ -12,11 +19,13 @@ export function InputFile({ title, text, ...rest }) {
   function handleUploadImage(event) {
     const file = event.target.files[0];
 
-    setImageFile(file);
+    onUpload(file);
 
-    const imagePreview = URL.createObjectURL(file);
+    // setImageFile(file);
 
-    setImage(imagePreview);
+    // const imagePreview = URL.createObjectURL(file);
+
+    // setImage(imagePreview);
   }
 
   return (
