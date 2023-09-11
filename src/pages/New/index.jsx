@@ -25,7 +25,7 @@ export function New() {
   // const [image, setImage] = useState(imageURL);
   // const [imageFile, setImageFile] = useState(null);
 
-  
+
 
   const [ingredients, setIngredients] = useState([]);
   const [newIngredient, setNewIngredient] = useState('');
@@ -34,7 +34,7 @@ export function New() {
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
   const [category, setCategory] = useState('');
-  
+
   const navigate = useNavigate();
 
   function handleBack() {
@@ -90,7 +90,7 @@ export function New() {
             onChange={e => setName(e.target.value)}
           />
 
-          <Select title='Categoria' options={options} onChange={e => setCategory(e.target.value)}/>
+          <Select title='Categoria' options={options} onChange={e => setCategory(e.target.value)} />
         </section>
 
         <section className='large-section'>
@@ -104,10 +104,15 @@ export function New() {
                 value={newIngredient}
                 onClick={handleAddIngredient}
               />
-              <TagItem
-                value='Pão Naan'
-                onClick={() => handleRemoveIngredient()}
-              />
+
+              {
+                ingredients.map((ingredient, index) =>
+                  <TagItem
+                    key={String(index)}
+                    value={ingredient}
+                    onClick={() => handleRemoveIngredient(ingredient)}
+                  />)
+              }
             </div>
           </div>
 
